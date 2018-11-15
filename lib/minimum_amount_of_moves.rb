@@ -7,14 +7,21 @@
 # q: an array of integers
 
 def minimumBribes(q)
+  def minimumBribes(q)
+    sorted = [*1..q.length]
     moves = 0
-    q.each_with_index do |num, index|
-        if num > index + 1 && (num - (index + 1)) <= 2
-            moves += (num - (index + 1))
-        elsif (num - (index + 1)) > 2
-            puts "Too chaotic"
-            return
+    while q != sorted
+        q.each_with_index do |num, i|
+            if num > i + 1 && (num - (i + 1)) > 2
+                puts "Too chaotic"
+                return
+            elsif q[i + 1] && num > q[i + 1]
+                q[i] = q[i + 1]
+                q[i + 1] = num
+                moves += 1
+            end
         end
     end
     puts moves
+  end
 end
