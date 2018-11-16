@@ -1,7 +1,7 @@
 require './test/test_helper.rb'
 require './lib/minimum_amount_of_bribes'
 
-class HighestProductTest < Minitest::Test
+class MinimumBribesTest < Minitest::Test
   def test_it_gets_min_bribes
     expected = 7
     input = %w[1 2 5 3 7 8 6 4]
