@@ -1,7 +1,7 @@
 require './test/test_helper.rb'
-require './lib/code_challenge_1119'
+require './lib/mock_interview_1119'
 
-class CodeChallengeTest < Minitest::Test
+class MockInterviewTest < Minitest::Test
 
   def test_it_can_set
     kv = KV.new
