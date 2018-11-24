@@ -10,5 +10,9 @@ class AlternatingCharactersTest < Minitest::Test
     assert_equal 2, actual
   end
 
+  def test_it_gets_number_of_removed_characters_to_make_alternating
+    actual = alternatingCharacters("AAABABBABB")
+    assert_equal 4, actual
+  end
 
 end
