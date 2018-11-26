@@ -1,12 +1,10 @@
 require 'minitest/autorun'
 require 'minitest/pride'
 require './lib/product_of_all_but_index.rb'
-require 'simplecov'
 # assert_equal expected, actual
 # assert boolean
 # assert_instance_of expected, actual
 
-SimpleCov.start
 
 class AlgorithemTest < Minitest::Test
 
@@ -19,5 +17,5 @@ class AlgorithemTest < Minitest::Test
     actual = productNumbers([1,2,3,4])
     assert_equal [24, 12, 8, 6], actual
   end
-  
+
 end

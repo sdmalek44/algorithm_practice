@@ -1,4 +1,5 @@
-require './test/test_helper.rb'
+require 'minitest/autorun'
+require 'minitest/pride'
 require './lib/ransom_note'
 
 class RansomNoteTest < Minitest::Test

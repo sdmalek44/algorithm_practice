@@ -1,4 +1,5 @@
-require './test/test_helper.rb'
+require 'minitest/autorun'
+require 'minitest/pride'
 require './lib/highest_product_of_integers'
 
 class HighestProductTest < Minitest::Test
