@@ -1,4 +1,5 @@
-require './test/test_helper.rb'
+require 'minitest/autorun'
+require 'minitest/pride'
 require './lib/two_d_array.rb'
 
 class TwoDArrayTest < Minitest::Test

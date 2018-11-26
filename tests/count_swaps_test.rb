@@ -1,4 +1,5 @@
-require './test/test_helper.rb'
+require 'minitest/autorun'
+require 'minitest/pride'
 require './lib/count_swaps.rb'
 
 class CountSwapTest < Minitest::Test

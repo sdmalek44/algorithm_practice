@@ -25,7 +25,6 @@
 # 8 6 6
 
 
-
 def hourglassSum(arr)
     new_arr = []
     4.times do |j|
